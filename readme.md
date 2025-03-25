@@ -37,15 +37,16 @@ The stock price is fetched using yahoo finance (yfinance) and the recommendation
 2. Installed Python Modules:
 
 fastapi - Web framework for building the API. It helps create RESTful endpoints for fetching stock prices and recommendations.
+
 uvicorn - ASGI server used to run the FastAPI application. It allows the API to be accessed over the internet.
+
 requests - Used for making HTTP requests to fetch stock prices from external APIs such as Yahoo Finance or search engines.
+
 google-generativeai - Connects to Google Gemini API, allowing the AI to generate stock market analysis and recommendations.
-langchain - A framework for developing AI-powered responses. It helps structure interactions with LLMs for better efficiency.
-openai - Used to interact with OpenAI’s GPT models (optional alternative to Gemini for generating stock recommendations).
-beautifulsoup4 - A web scraping library that extracts stock price data from websites like Yahoo Finance when APIs are unavailable.
-duckduckgo-search - Fetches stock prices by performing web searches on DuckDuckGo, useful when direct API access is limited.
-httpx - Similar to requests, but supports asynchronous HTTP requests, making API calls more efficient.
-yfinance - Fetches real-time and historical stock market data directly from Yahoo Finance.
+
+langchain - A framework for developing AI powered responses. It helps structure interactions with LLMs for better efficiency.
+
+yfinance - Fetches real time and historical stock market data directly from Yahoo Finance.
 
 
 
@@ -59,7 +60,7 @@ yfinance - Fetches real-time and historical stock market data directly from Yaho
 │   │── config.py           # API keys & environment variables
 │── requirements.txt        # Dependencies
 │── README.md              # Project setup & execution guide
-│── .gitignore             # Git ignored files
+
 
 4. Setup
 
