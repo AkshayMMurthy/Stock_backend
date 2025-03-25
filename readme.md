@@ -21,6 +21,6 @@ Example usage in postman with GET request:
 
 https://stock-backend-7unk.onrender.com/stock/AAPL
 
-![ALT TEXT](./image.png)
+![ALT TEXT](./imageget.png)
 
 
