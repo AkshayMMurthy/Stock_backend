@@ -11,26 +11,6 @@ def ask_gemini(prompt):
     response = model.generate_content(prompt)
     return response.text.strip()
 
-'''def ask_gemini(prompt: str):
-    """
-    Sends a prompt to the Gemini API and returns the response.
-    It first checks for available models and uses a Gemini model.
-    """
-    genai.configure(api_key="YOUR_API_KEY")  # Replace with your actual API key
-
-    available_models = genai.available_models()
-    gemini_model_name = None
-    for model in available_models:
-        if "gemini" in model.name.lower():
-            gemini_model_name = model.name
-            break  # Use the first Gemini model found
-
-    if not gemini_model_name:
-        raise ValueError("No Gemini model found.")
-
-    model = genai.GenerativeModel(model_name=gemini_model_name)
-    response = model.generate_content(prompt)
-    return response.text.strip()'''
 
 def get_stock_analysis(ticker):
     """Fetch stock price & ask Gemini for Buy/Sell/Hold advice."""
