@@ -1,6 +1,6 @@
 import google.generativeai as genai
-from config import GOOGLE_API_KEY
-from stock_fetcher import get_stock_price
+from app.config import GOOGLE_API_KEY
+from app.stock_fetcher import get_stock_price
 
 # Configure Gemini AI
 genai.configure(api_key=GOOGLE_API_KEY)
