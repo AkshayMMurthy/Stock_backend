@@ -2,7 +2,7 @@ import google.generativeai as genai
 from app.config import GOOGLE_API_KEY
 from app.stock_fetcher import get_stock_price
 
-# Configure Gemini AI
+# Configurinf Gemini AI using the API Key
 genai.configure(api_key=GOOGLE_API_KEY)
 
 def ask_gemini(prompt):
