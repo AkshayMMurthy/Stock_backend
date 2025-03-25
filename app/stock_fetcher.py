@@ -1,5 +1,5 @@
 import yfinance as yf
-
+#Using Yahoo Finance to get the stock price
 def get_stock_price(ticker):
     """Fetch latest stock price using Yahoo Finance."""
     try:
