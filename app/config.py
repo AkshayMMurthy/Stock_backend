@@ -1,7 +1,6 @@
 import os
-from dotenv import load_dotenv
 
-# Load API key from .env
-load_dotenv()
+GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")  # ✅ Directly fetches from Render's environment variables
 
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+if GOOGLE_API_KEY is None:
+    raise ValueError("GOOGLE_API_KEY is not set in environment variables")
