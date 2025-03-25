@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from agent import get_stock_analysis
+from app.agent import get_stock_analysis
 
 app = FastAPI()
 
